@@ -1,0 +1,14 @@
+$("document").ready(function(){
+  $(".edit-info").click(function(){
+    $("#rateForm1").hide();
+    $("#rateForm2").show();
+    $(this).hide();
+    $("#sampleSuccess1").hide();
+  });
+  $("#sampleSaveBtn").click(function(){
+  	$(".edit-info").show();
+  	$("#rateForm1").show();
+  	$("#rateForm2").hide();
+  	$("#sampleSuccess1").show();
+  });
+});

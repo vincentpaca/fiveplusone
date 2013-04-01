@@ -1,0 +1,252 @@
+
+.navbar.navbar-inverse
+  .navbar-inner
+    .container
+      / .nav-collapse.collapse
+      %a.logo
+        
+      %a.profile-nav{ :href => '#' }
+        .profile-image
+        .profile-info
+          Martin Luther
+.block
+  .container
+    .row
+      .span12
+        .main-user-profile
+          .profile-image.profile-image-large
+          .profile-info
+            %dl.dl-horizontal
+              %dt
+                Branch
+              %dd
+                Beijing
+            %dl.dl-horizontal
+              %dt
+                Address
+              %dd
+                Wankok, Beijing China
+
+
+.container
+  .row
+    .span12
+      %h3 Customer
+
+      %dl.dl-horizontal
+        %dt
+          Name
+        %dd
+          Johnny Bravo
+      %dl.dl-horizontal
+        %dt
+          Contact Number
+        %dd
+          032 455 3349
+      %dl.dl-horizontal
+        %dt
+          Email
+        %dd
+          johnny@bravo.com
+      %dl.dl-horizontal
+        %dt
+          Address
+        %dd
+          Unit 3, Lorem Ipsum street
+
+.container
+  .row
+    .span12
+      %h3 
+        Rating
+        %a.edit-info
+          Edit rating
+      %strong
+        Added by Jimmy Filley, March 30, 2013
+      .alert.alert-success#sampleSuccess1{ :style => 'display: none' }
+        You have updated this customer 
+      .rating-form
+        #rateForm1
+
+          %dl.dl-horizontal
+            %dt
+              Time In
+            %dd
+              March 30, 2013 11:00 AM
+          %dl.dl-horizontal
+            %dt
+              Time Out
+            %dd
+              March 30, 2013 12:00 PM
+          %dl.dl-horizontal
+            %dt
+              Cleanliness
+            %dd
+              4
+          %dl.dl-horizontal
+            %dt
+              Product Availability
+            %dd
+              3
+          %dl.dl-horizontal
+            %dt
+              Checkout Counter Queue
+            %dd
+              5
+          %dl.dl-horizontal
+            %dt
+              Price Differentiation
+            %dd
+              3
+        #rateForm2{ :style => 'display: none' }
+          %dl.dl-horizontal
+            %dt
+              Time In
+            %dd
+              March 30, 2013 11:00 AM
+          %dl.dl-horizontal
+            %dt
+              Time Out
+            %dd
+              March 30, 2013 12:00 PM
+          %dl.dl-horizontal
+            %dt
+              Cleanliness
+            %dd
+              %form{ :name => 'form1' }
+              .field-inline-wrapper
+                %label{ :for => 'r1' }  
+                  1
+                %input#r1{ :type => 'radio', :name => 'form1' }
+              .field-inline-wrapper
+                %label{ :for => 'r2' }  
+                  2
+                %input#r2{ :type => 'radio', :name => 'form1' }
+              .field-inline-wrapper
+                %label{ :for => 'r3' }  
+                  3
+                %input#r3{ :type => 'radio', :name => 'form1' }
+              .field-inline-wrapper
+                %label{ :for => 'r4' }  
+                  4
+                %input#r4{ :type => 'radio', :name => 'form1' }
+              .field-inline-wrapper
+                %label{ :for => 'r5' } 
+                  5
+                %input#r5{ :type => 'radio', :name => 'form1' }
+          %dl.dl-horizontal
+            %dt
+              Product Availability
+            %dd
+              %form{ :name => 'form2' }
+              .field-inline-wrapper
+                %label{ :for => 'r1' }  
+                  1
+                %input#r1{ :type => 'radio', :name => 'form2' }
+              .field-inline-wrapper
+                %label{ :for => 'r2' }  
+                  2
+                %input#r2{ :type => 'radio', :name => 'form2' }
+              .field-inline-wrapper
+                %label{ :for => 'r3' }  
+                  3
+                %input#r3{ :type => 'radio', :name => 'form2' }
+              .field-inline-wrapper
+                %label{ :for => 'r4' }  
+                  4
+                %input#r4{ :type => 'radio', :name => 'form2' }
+              .field-inline-wrapper
+                %label{ :for => 'r5' } 
+                  5
+                %input#r5{ :type => 'radio', :name => 'form2' }
+          %dl.dl-horizontal
+            %dt
+              Checkout Counter Queue
+            %dd
+              %form{ :name => 'form3' }
+              .field-inline-wrapper
+                %label{ :for => 'r1' }  
+                  1
+                %input#r1{ :type => 'radio', :name => 'form3' }
+              .field-inline-wrapper
+                %label{ :for => 'r2' }  
+                  2
+                %input#r2{ :type => 'radio', :name => 'form3' }
+              .field-inline-wrapper
+                %label{ :for => 'r3' }  
+                  3
+                %input#r3{ :type => 'radio', :name => 'form3' }
+              .field-inline-wrapper
+                %label{ :for => 'r4' }  
+                  4
+                %input#r4{ :type => 'radio', :name => 'form3' }
+              .field-inline-wrapper
+                %label{ :for => 'r5' } 
+                  5
+                %input#r5{ :type => 'radio', :name => 'form3' }
+          %dl.dl-horizontal
+            %dt
+              Price Differentiation
+            %dd
+              %form{ :name => 'form4' }
+              .field-inline-wrapper
+                %label{ :for => 'r1' }  
+                  1
+                %input#r1{ :type => 'radio', :name => 'form4' }
+              .field-inline-wrapper
+                %label{ :for => 'r2' }  
+                  2
+                %input#r2{ :type => 'radio', :name => 'form4' }
+              .field-inline-wrapper
+                %label{ :for => 'r3' }  
+                  3
+                %input#r3{ :type => 'radio', :name => 'form4' }
+              .field-inline-wrapper
+                %label{ :for => 'r4' }  
+                  4
+                %input#r4{ :type => 'radio', :name => 'form4' }
+              .field-inline-wrapper
+                %label{ :for => 'r5' } 
+                  5
+                %input#r5{ :type => 'radio', :name => 'form4' }
+          %dl.dl-horizontal
+            %dt
+            %dd
+              %button.btn.btn-primary#sampleSaveBtn
+                Save rating
+
+.container
+  .row
+    .span12
+      %h3
+        Comments
+      %form.comment-form
+        %fieldset
+          %textarea{ :placeholder => 'Enter your comment here' }
+          %button.btn
+            Save comment
+  .block
+    .row
+      .span1
+        .user-image
+      .span11
+        %p
+          %strong
+            Jimmy Felly
+        %p
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+        %p
+          %span.help-block
+            Tue April 1, 2013
+    .row
+      .span1
+        .user-image
+      .span11
+        %p
+          %strong
+            Jimmy Felly
+        %p
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+        %p
+          %span.help-block
+            Tue April 1, 2013
