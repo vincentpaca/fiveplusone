@@ -1,58 +1,140 @@
-a.logo
-  width: 57px
-  height: 38px
-  display: block
-  float: left
-  background-image: image-url('logo.png')
-.navbar-inner
-  border-radius: 0
-a
-  cursor: pointer
-.block
-  padding: 20px 0
-a.profile-nav
-  float: right
-  padding: 5px
-  display: block
-.profile-image
-  float: left
-  width: 30px
-  height: 30px
-  background: #999
-  &.profile-image-large
-    width: 100px
-    height: 100px
-.profile-info
-  float: left
-  margin-left: 5px
-  margin-top: 5px
-  li
-    display: block
-    margin: 10px 0
-.main-user-profile
-  font-size: 18px
 
-h3 
-  a.edit-info
-    font-size: 13px
-    font-weight: normal
-.rating-form
-  .field-inline-wrapper
-    margin-top: -30px
-.comment-form
-  textarea
+.group
+  &:after, &:before
+    content: ""
+    display: table
+
+.group
+  &:after 
+    clear: both
+.group
+  zoom: 1
+a
+  color: #e1e1e1
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  &.edit-link
+    text-decoration: none
+    padding: 2px
+button
+  margin: 0
+  padding: 0
+.edit-link
+  font-size: 12px
+  font-weight: normal
+  &:hover
+    background: #e1e1e1
+    color: #2c4762
+textarea
+  padding: 10px
+  font-size: 16px
+  border: none
+  background: #fff
+  min-height: 100px
+  resize: none
+  &.full
     width: 100%
-.user-image
-  width: 50px
-  height: 50px
-  background: #e1e1e1
-.field-inline-wrapper
-  display: inline-block
-  margin: 0 5px
-  border: 1px solid #e1e1e1
-  border-radius: 3px
-  padding: 5px
-  text-align: center
-  label
+    box-sizing: border-box
+
+strong
+  font-weight: bold
+h3
+  font-size: 24px
+  &.bordered
+    border-bottom: 1px solid lighten(#2c4762, 2%)
+  &.comment-user
+    font-size: 16px
     font-weight: bold
-    margin-bottom: 0
+.btn
+  font-size: 16px
+  padding: 10px
+  &.action
+    font-weight: bold
+dl.align-horizontal
+  white-space: nowrap
+  text-overflow: ellipsis
+  overflow: hidden
+  
+  dt
+    display: inline-block
+    min-width: 120px
+    margin-right: 10px
+
+  dd
+    display: inline-block
+
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+body
+  font-family: "Helvetica","Helvetica Neue", Arial, sans-serif
+  color: #e1e1e1
+  line-height: 1.4
+  font-size: 100%
+  background: #2c4762
+.block
+  margin-top: 40px
+.content
+  padding: 20px
+.content-inner
+  padding: 20px
+  background: darken(#2c4762, 5%)
+  border-radius: 10px
+  border: 1px solid darken(#2c4762, 7%)
+  box-shadow: 0 1px 0 rgba(255,255,255,.1)
+
+.profile-thumbnail
+  height: 100px
+  width: 100px
+  border-radius: 10px
+  overflow: hidden
+  float: left
+  margin-right: 20px
+  &.small
+    height: 60px
+    width: 60px
+    border-radius: 5px
+.profile-info
+  li
+    margin: 10px 0
+.list
+  li
+    margin: 10px 0
+
+.rating
+  margin-top: 20px
+  a
+    width: 120px
+    height: 120px
+    padding: 15px
+    margin: 10px
+    border-radius: 50%
+    border: 1px solid #e1e1e1
+    text-align: center
+    display: inline-block
+    text-decoration: none
+    cursor: pointer
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, #e1e1e1), to(#c1c1c1))
+    background-image: -webkit-linear-gradient(top, #e1e1e1 50%, #c1c1c1)
+    background-image: -moz-linear-gradient(top, #e1e1e1 50%, #c1c1c1)
+    background-image: -o-linear-gradient(top, #e1e1e1 50%, #c1c1c1)
+    background-image: linear-gradient(top, #e1e1e1 50%, #c1c1c1)
+    transition: all .2s ease-in
+    color: #333
+    border: 7px solid lighten(#2c4762, 20%)
+
+    &:hover
+      background: #f3a723
+    &.active
+      background: #f3a723
+      box-shadow: 0 3px 5px rgba(0,0,0,.4) inset
+      border-color: #fff
+  i
+    font-size: 50px
+    margin-top: 10px
+    display: block
+
+.comment-item
+  margin: 20px 0 0 0
